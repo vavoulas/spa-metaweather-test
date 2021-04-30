@@ -19,7 +19,7 @@ function DisplayWeather(props) {
         
         
          
-     }, [])
+     },[])
      
      console.log(weatherdata);
          
@@ -33,7 +33,7 @@ function DisplayWeather(props) {
                         <div className="card">
                             <h2 className="card-header">{props.city}</h2>
                             <div className="card-body">
-                                <span className="card-title">{weatherdata.consolidated_weather[0].weather_state_name} <i></i></span>
+                                <span className="card-title">{weatherdata.consolidated_weather[0].weather_state_name} <i>s</i></span>
                                 
                                 <button className="btn btn-danger">Close</button>
                             </div>
